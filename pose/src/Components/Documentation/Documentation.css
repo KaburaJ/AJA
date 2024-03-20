@@ -1,0 +1,23 @@
+.documentation-container {
+    margin-left: 20%;
+    margin-top: 40px;
+    padding: 40px;
+    margin-right: 4%;
+    text-align: justify;
+}
+
+#main-doc {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-section h3 {
+    color: #074E8C
+}
+
+
+.main-section ul,
+.main-section p {
+    color: #676a6c;
+}

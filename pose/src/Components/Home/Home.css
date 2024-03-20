@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+body {
+  font-family: "Roboto", sans-serif;
+}
+.home {
+  margin-left: -6%;
+  margin-top: 5%;
+  display: block;
+}
+
+.pics {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+}
+.pics p {
+    margin-left: 25px;
+}
+.pic {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+
+
+.file-upload {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  line-height: 1;
+  color: #454cad;
+  margin-bottom: 0;
+}
+p {
+  font-size: 18px;
+  color: #5f6982;
+}
+.uploader {
+  display: block;
+  clear: both;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  
+}
+.uploader label {
+  float: left;
+  clear: both;
+  width: 100%;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  background: #1D1B22;
+  border-radius: 22px;
+  border: 3px solid #eee;
+  transition: all 0.2s ease;
+  user-select: none;
+  height: 62vh;
+  margin-right: 60px;
+}
+.uploader label:hover {
+  border-color: black;
+}
+.uploader label.hover {
+  border: 3px solid black;
+  box-shadow: inset 0 0 0 6px #eee;
+}
+.uploader label.hover #start i.fa {
+  transform: scale(0.8);
+  opacity: 0.3;
+}
+.uploader #start {
+  float: left;
+  clear: both;
+  width: 100%;
+}
+#start {
+  margin-top: 120px;
+
+}
+.uploader #start.hidden {
+  display: none;
+}
+.uploader #start i.fa {
+  font-size: 50px;
+  margin-bottom: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+.uploader #response {
+  float: left;
+  clear: both;
+  width: 100%;
+}
+.uploader #response.hidden {
+  display: none;
+}
+.uploader #response #messages {
+  margin-bottom: 0.5rem;
+}
+.uploader #file-image {
+  display: inline;
+  margin: 0 auto 0.5rem auto;
+  width: auto;
+  height: auto;
+  max-width: 180px;
+}
+.uploader #file-image.hidden {
+  display: none;
+}
+.uploader #notimage {
+  display: block;
+  float: left;
+  clear: both;
+  width: 100%;
+}
+.uploader #notimage.hidden {
+  display: none;
+}
+.uploader progress,
+.uploader .progress {
+  display: inline;
+  clear: both;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 180px;
+  height: 8px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #eee;
+  overflow: hidden;
+}
+.uploader .progress[value]::-webkit-progress-bar {
+  border-radius: 4px;
+  background-color: #eee;
+}
+.uploader .progress[value]::-webkit-progress-value {
+  background: linear-gradient(to right, #393f90 0%, #454cad 50%);
+  border-radius: 4px;
+}
+.uploader .progress[value]::-moz-progress-bar {
+  background: linear-gradient(to right, #393f90 0%, #454cad 50%);
+  border-radius: 4px;
+}
+.uploader input[type="file"] {
+  display: none;
+}
+.uploader div {
+  margin: 0 0 0.5rem 0;
+  color: #5f6982;
+}
+.uploader .btn {
+  display: inline-block;
+  margin: 0.5rem 0.5rem 1rem 0.5rem;
+  clear: both;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: initial;
+  border: none;
+  border-radius: 0.2rem;
+  outline: none;
+  padding: 0 1rem;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+  background: #454cad;
+  border-color: #454cad;
+  cursor: pointer;
+}
+
+#file-upload-form {
+    border-radius: 20px;
+}
+
+.file-upload-main h3 {
+  color: #074E8C;
+}
+
+.main-body{
+    margin-left: 30%;
+    margin-top:10%;
+}
+.main-body h3{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #074E8C;
+
+}
+
+.main-body img {
+    border-radius: 50%;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    margin-top: -20px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-right: -20px;
+    margin-top: 8%;
+}
