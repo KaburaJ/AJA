@@ -6,7 +6,7 @@ import about2 from '../../Common/Images/about2.png'
 const About = () => {
   return (
     <>
-      <div id="about-main" style={{marginLeft:"15%"}}>
+      <div id="about-main" >
         <div className="story-container">
           <div className="need-for-dx-container">
             <h3 className="text-center">About Us</h3>

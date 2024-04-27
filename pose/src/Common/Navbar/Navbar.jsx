@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import logo from '../../Common/Images/aja.png';
-import { ChatbubblesOutline, SearchOutline, SettingsOutline } from 'react-ionicons';
+import { ChatbubblesOutline, ReorderThreeOutline, SearchOutline, SettingsOutline } from 'react-ionicons';
 import { HomeOutline } from 'react-ionicons';
 import { FolderOpenOutline } from 'react-ionicons';
 import { PieChartOutline } from 'react-ionicons';
@@ -10,11 +10,18 @@ import { PeopleOutline } from 'react-ionicons';
 const Navbar = ({ isSelected, handleSelected }) => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
 
+    const toggleSidebar = () => {
+        setSidebarOpen(!sidebarOpen);
+    };
+    
     return (
         <>
-            <nav id="navbar" onMouseEnter={() => setSidebarOpen(true)} onMouseLeave={() => setSidebarOpen(false)}>
+            <div className="toggle-icon" onClick={toggleSidebar}>
+                <ReorderThreeOutline />
+            </div>
+            <nav id="navbar" className={sidebarOpen ? 'open' : ''}>
                 <ul className="navbar-items flexbox-col">
-                    <li className="navbar-logo flexbox-left">
+                    <li className="navbar-logo flexbox-left" >
                         <a className="navbar-item-inner flexbox">
                             <img className="logo" src={logo} alt="Logo"></img>
                         </a>

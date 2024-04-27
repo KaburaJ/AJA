@@ -21,12 +21,14 @@ const Documentation = () => {
                     <p>The history of pose estimation can be traced back to the early days of computer vision research. Early attempts at pose estimation primarily focused on human subjects and relied on handcrafted features and geometric models. However, these approaches were limited in their ability to handle variations in pose, appearance, and environmental conditions.</p>
                     <p>In recent years, the field has witnessed significant advancements fueled by deep learning techniques, particularly convolutional neural networks (CNNs). Deep learning-based pose estimation methods have demonstrated remarkable performance in various domains, including human pose estimation, animal pose estimation, and object detection.</p>
                     <p>Key milestones in the history of pose estimation include the development of landmark methods such as OpenPose, which introduced a real-time multi-person pose estimation system, and DeepLabCut, which pioneered markerless pose estimation using deep learning.</p>
+                    <p>Notwithstanding, the milestones achieved in animal pose estimation is nowhere near that of human pose estimation. The challenges that are there, which include the gaps present in determining what can be defined as a joint and what cannot, might explain why. We chose this track fo that exact reason. What follows is a breakdown of the steps we took in curating not only a sound but accessible and reproducible documentation for the process followed.</p>
                 </section>
                 <section className="main-section" id="Objectives">
                     <h3 style={{marginBottom:"20px"}}>Objectives</h3>
                     <ul>
-                        <li>Determine a specific animal based on their movement styles</li>
-                        <li>Create an overlap of cameras to cover an entire conservancy</li>
+                        <li>Determine a specific animal based on their movement styles.</li>
+                        <li>Create an overlap of cameras to cover an entire conservancy.</li>
+                        <li>Creating a readable and reproducible documentation for our model.</li>
                     </ul>
                 </section>
                 <section className="main-section" id="LiteratureReview">
@@ -46,6 +48,36 @@ const Documentation = () => {
                         <li>Deep learning-based approaches such as DeepLabCut, DeepPoseKit, and AlphaTracker</li>
                         <li>Geometric deep learning techniques for 3D kinematic profiling</li>
                         <li>Software pipelines for automated analysis of social behaviors in animals</li>
+                    </ul>
+                </section>
+                <section className="main-section" id="Approach">
+                    <h3 style={{marginBottom:"20px"}}>Our Approach</h3>
+                    <p>Preceding the research process, we decided on an approach. Our approach included:</p>
+                    <ul>
+                        <li>Creating a model based on VHRNet.</li>
+                        <li>Investing in computational hours and training time.</li>
+                        <li>Narrowing down on the objects to be detected by creating an object detection model.</li>
+                        <li>Testing and iteration</li>
+                    </ul>
+                </section>
+                <section className="main-section" id="Model">
+                    <h3 style={{marginBottom:"20px"}}>Our Model</h3>
+                    <p>Preceding the research process, we decided on an approach. Our approach included:</p>
+                    <ul>
+                        <li>Creating a model based on VHRNet.</li>
+                        <li>Investing in computational hours and training time.</li>
+                        <li>Narrowing down on the objects to be detected by creating an object detection model.</li>
+                        <li>Testing and iteration</li>
+                    </ul>
+                </section>
+                <section className="main-section" id="Findings">
+                    <h3 style={{marginBottom:"20px"}}>Our Findings</h3>
+                    <p>Preceding the research process, we decided on an approach. Our approach included:</p>
+                    <ul>
+                        <li>Creating a model based on VHRNet.</li>
+                        <li>Investing in computational hours and training time.</li>
+                        <li>Narrowing down on the objects to be detected by creating an object detection model.</li>
+                        <li>Testing and iteration</li>
                     </ul>
                 </section>
                 <section className="main-section" id="Conclusion">

@@ -17,7 +17,7 @@
   --paragraph: 1.11rem;
   --navbar-buttons: 2.4rem;
   /* misc */
-  --transition-main: 0.175, 0.685, 0.32;
+  /* --transition-main: 0.175, 0.685, 0.32; */
   /* Fonts */
   --font-main: "Poppins";
 }
@@ -165,7 +165,7 @@ textarea {
 }
 input,
 textarea {
-  transition: all 0.2s ease-in-out;
+  transition: none;
 }
 input:hover,
 input:focus,
@@ -267,7 +267,8 @@ select {
   background-color: hsl(var(--background-secondary));
   overflow-y: auto;
   overflow-x: hidden;
-  transition: width 0.35s cubic-bezier(var(--transition-main), 1);
+  transition: none;
+  
 }
 #navbar:hover {
   width: 16em;
@@ -317,7 +318,7 @@ select {
   color: hsl(var(--quite-gray));
   border-radius: 0.25em;
   text-decoration: none;
-  transition: all 0.2s cubic-bezier(var(--transition-main), 1);
+  transition: none;
 }
 .navbar-item-inner:hover {
   color: hsl(var(--white));
@@ -342,7 +343,7 @@ select {
   width: 0;
   text-overflow: ellipsis;
   white-space: nowrap;
-  transition: all 0.35s cubic-bezier(var(--transition-main), 1);
+  transition: none;
   overflow: hidden;
   opacity: 0;
   color: #676a6c;
@@ -352,7 +353,7 @@ select {
   opacity: 1;
 }
 
-.navbar-submenu.selected ,
+#navbar-submenu.selected ,
 #navbar .link-text:active,
 #navbar .link-text:hover {
   color: white;
@@ -391,6 +392,15 @@ select {
   background-color: hsl(var(--primary));
 }
 
+.toggle-icon {
+  color: black;
+  margin-left:90%;
+  font-size:46px; 
+  position:absolute;
+  display:none;
+  margin-top: -20px;
+  cursor:pointer
+}
 /* ===============
     5. @keyframes
    =============== */
@@ -435,22 +445,68 @@ select {
   }
 }
 @media only screen and (max-width: 756px) {
-  :root {
-    /* Sizes */
-    --heading-large: 4rem;
-    --heading-medium: 2.6rem;
-    --heading-small: 1.6rem;
-    --paragraph: 1rem;
-    --navbar-buttons: 2.2rem;
-  }
   .view-width {
     width: calc(100% - 5em);
   }
+  #navbar {
+    width: 4em;
+  }
+  .link-text {
+    display: block; 
+  }
+  .navbar-submenu-item-inner {
+    display: none;
+  }
+  .navbar-submenu-item-inner {
+    display: block;
+  }
+  .navbar-submenu-item-inner:active {
+    display: block;
+  }
 }
+
 @media only screen and (max-width: 576px) {
   .view-width {
     width: calc(100% - 3em);
   }
 }
 @media only screen and (max-width: 496px) {
+}
+
+/* Add this at the end of your CSS file */
+.overlay-open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  transition: none;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+  z-index: 999; 
+}
+
+@media screen and (max-width: 992px) {
+  #navbar {
+      width: 16em;
+      height: 100vh;
+      transition: none;
+      position: fixed;
+      top: 0;
+      left: -100%; /* Initially off-screen */
+      z-index: 1000;
+  }
+
+  .toggle-icon {
+    display: block;
+    color: black;
+  }
+  #navbar.open {
+      left: 0; /* Slide in the navbar */
+  }
+
+  /* Add this to handle overlay effect */
+  #navbar.open ~ .overlay-open {
+      display: block;
+  }
 }

@@ -12,24 +12,72 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-top: 20px;
+  /* margin-top: 10px; */
 }
 .pics p {
-    margin-left: 25px;
+  margin-left: 25px;
+}
+
+.pics h3 {
+  width: 300px;
+  margin-left: -3% !important;
 }
 .pic {
   width: 300px;
   height: 300px;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   cursor: pointer;
 }
 
-
 .file-upload {
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
+#json-input {
+  margin-left: 29%;
+  max-width: 65%;
+  padding: 30px;
+  min-height: 40vh;
+  color: hsl(0, 0%, 50%);
+}
+#predict {
+  background-color: #1d1b22;
+  color: hsl(0, 0%, 50%);
+  margin-left: 52%;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+#predict:hover {
+  color: white;
+}
+
+.pre-buttons,
+.top {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.pre-buttons {
+  margin-left: 29%;
+}
+
+.pre-buttons button {
+  border-radius: 20px;
+}
+
+.default #predict {
+  background-color: #1d1b22;
+  color: hsl(0, 0%, 50%);
+  margin-left: 55%;
+  border-radius: 20px;
+}
+.button-house {
+  padding: 30px;
+}
 h2 {
   font-family: "Roboto", sans-serif;
   font-size: 26px;
@@ -47,24 +95,28 @@ p {
   margin: 0 auto;
   width: 100%;
   max-width: 600px;
-  
+}
+
+.options-select {
+  margin-left: 29%;
 }
 .uploader label {
   float: left;
   clear: both;
   width: 100%;
+  margin-bottom: 5%;
   padding: 2rem 1.5rem;
   text-align: center;
-  background: #1D1B22;
+  background: #1d1b22;
   border-radius: 22px;
   border: 3px solid #eee;
-  transition: all 0.2s ease;
+  transition: none;
   user-select: none;
-  height: 62vh;
+  height: 58vh;
   margin-right: 60px;
 }
 .uploader label:hover {
-  border-color: black;
+  border-color: #1d1b22;
 }
 .uploader label.hover {
   border: 3px solid black;
@@ -81,7 +133,6 @@ p {
 }
 #start {
   margin-top: 120px;
-
 }
 .uploader #start.hidden {
   display: none;
@@ -177,41 +228,196 @@ p {
 }
 
 #file-upload-form {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 .file-upload-main h3 {
-  color: #074E8C;
+  color: #074e8c;
+  margin-left: 29%;
 }
 
-.main-body{
-    margin-left: 30%;
-    margin-top:10%;
+.main-body {
+  margin-left: 30%;
+  margin-top: 10%;
 }
-.main-body h3{
-    margin-top: 5%;
-    margin-bottom: 5%;
-    color: #074E8C;
-
+.main-body h3 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: #074e8c;
 }
 
 .main-body img {
-    border-radius: 50%;
-    padding: 20px;
-    width: 400px;
-    height: 400px;
-    margin-top: -20px;
+  border-radius: 50%;
+  padding: 20px;
+  width: 400px;
+  height: 400px;
+  margin-top: -20px;
 }
 
 .main-content {
-    display: flex;
-    flex-direction: row;
-    gap: 120px;
+  display: flex;
+  flex-direction: row;
+  gap: 120px;
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  margin-right: -20px;
+  margin-top: 8%;
+}
+
+
+@media only screen and (max-width: 756px) {
+  .file-upload-main {
+    margin-left: 7.5em;
+  }
+  .file-upload {
+    width: 36em;
+    margin-bottom: 30px;
+  }
+  .pics {
+    display: none;
+    /* max-width: 35em;
+    margin-left: 7.5em; */
+  }
+  .home {
+    margin-left: -10%;
+    margin-top: 10%;
+  }
+  #json-input {
+    margin-left: 1%;
+    max-width: 92%;
+    padding: 30px;
+    min-height: 100vh;
+  }
+  .default #predict {
+    margin-left: 30%;
+    margin-bottom: 5%;
+  }
+  .button-house #predict {
+    margin-left: 36%;
+    margin-bottom: 5%;
+  }
+  .default {
+    margin-top: 50px;
+  }
+
+  .default div p {
+    margin-left: 5%;
+  }
+  .pics h3 {
+    margin-left: 5%;
+  }
+  .file-upload-main .text-center {
+    margin-left: 10px;
+  }
+  .file-upload-main .options-select {
+    margin-left: 10px;
+  }
+  .pre-buttons {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 20%;
+  }
+  .pre-buttons button{
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .home {
+    margin-left: -25%;
+  }
+  .file-upload {
+    max-width: 90%;
+    background-color: transparent;
+    color: transparent;
+    margin-bottom: 30px;
+  }
+  .file-upload-form {
+    height: 30vh;
+  }
+
+  .uploader label {
+    height: auto;
+  }
+  #start {
+    margin-top: 3%;
+  }
+  .pics {
+    display: none;
+    /* max-width: 35em;
+    margin-left: 7.5em; */
+  }
+  #json-input {
+    margin-left: 1%;
+    max-width: 92%;
+    padding: 30px;
+    min-height: 40vh;
+  }
+  .default #predict {
+    margin-left: 30%;
+    margin-bottom: 5%;
+  }
+  .button-house #predict {
+    margin-left: 36%;
+    margin-bottom: 5%;
+  }
+  .default {
+    margin-top: 30px;
+  }
+
+  .default div p {
+    text-align: center;
+  }
+  .pics h3 {
+    text-align: center;
+  }
+  .default div{
+    margin-top: 5%;
+  }
+  .file-upload-main .text-center {
+    margin-left: 10px;
+  }
+  .file-upload-main .options-select {
+    margin-left: 10px;
+  }
+  .pre-buttons {
     display: flex;
     flex-direction: column;
-    margin-right: -20px;
-    margin-top: 8%;
+    margin-left: 10%;
+  }
+}
+@media only screen and (max-width: 496px) {
+  .home {
+    max-height: auto;
+  }
+  .default #predict {
+    margin-left: 20%;
+    margin-bottom: 5%;
+  }
+  .button-house #predict {
+    margin-left: 30%;
+    margin-bottom: 5%;
+  }
+  .default div p {
+    margin-left: -13px;
+  }
+  .options-select p {
+    font-size: 14px;
+  }
+  .protocol-output-section p{
+    font-size: 14px;
+  }
+  .pre-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  #about-main {
+    margin-left: 1%;
+  }
 }
