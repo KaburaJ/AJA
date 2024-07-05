@@ -1,15 +1,4 @@
-/* body {
-    padding: 0;
-    margin: 0;
-    font-family: 'IBM Plex Serif',Serif;
-    background: #f3f3f3;
-  } */
-h1,
-h2,
-h3 {
-  margin: 0;
-  font-family: "IBM Plex Sans", Serif;
-}
+
 p {
   margin: 0;
   font-size: 18px;
@@ -28,6 +17,8 @@ a:hover {
   --container: 1160px;
   max-width: var(--container);
   margin: auto;
+  color: #6f7782;
+
 }
 .teamGrid {
   display: grid;

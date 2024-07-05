@@ -7,8 +7,8 @@ const Team = () => {
     <>
       <div className="teamWrapper">
         <div className="container">
-          <h3 className="text-center" style={{marginLeft:"20px"}}>Our Team</h3>
-          <p align="center" style={{textAlign:"center"}}>Meet our team members that curated the keypoints algorithm and model that is</p>
+          <h2 className="text-center" style={{marginLeft:"225px"}}>Our Team</h2>
+          <p align="center" style={{textAlign:"center", fontWeight:"normal", marginLeft:"-80px"}}>Meet our team members that curated the keypoints algorithm and model that is</p>
           <div className="teamGrid">
           <div className="colmun">
               <div className="teamcol">
@@ -20,8 +20,7 @@ const Team = () => {
                     />
                   </div>
                   <div className="member-name">
-                    {" "}
-                    <h2 align="center">Dr. Ciira Maina</h2>{" "}
+                    <h3 style={{align:"center", color:"#074e8c"}}>Dr. Ciira Maina</h3>
                   </div>
                   <div className="member-info">
                     <p align="center">
@@ -30,11 +29,9 @@ const Team = () => {
                     </p>
                   </div>
                   <div className="member-mail">
-                    {" "}
                     <p align="center">
-                      {" "}
-                      <a href="mailto:@gmail.com">mailto:@gmail.com</a>{" "}
-                    </p>{" "}
+                        <a href="mailto:@gmail.com">mailto:@gmail.com</a>
+                    </p>
                   </div>
                   <div className="member-social">
                     <ul className="social-listing">
@@ -68,8 +65,7 @@ const Team = () => {
                     />
                   </div>
                   <div className="member-name">
-                    {" "}
-                    <h2 align="center">Antony Gitau</h2>{" "}
+                    <h3 style={{align:"center", color:"#074e8c"}}>Antony Gitau</h3>
                   </div>
                   <div className="member-info">
                     <p align="center">
@@ -78,11 +74,9 @@ const Team = () => {
                     </p>
                   </div>
                   <div className="member-mail">
-                    {" "}
                     <p align="center">
-                      {" "}
-                      <a href="mailto:@gmail.com">mailto:@gmail.com</a>{" "}
-                    </p>{" "}
+                        <a href="mailto:@gmail.com">mailto:@gmail.com</a>
+                    </p>
                   </div>
                   <div className="member-social">
                     <ul className="social-listing">
@@ -116,8 +110,7 @@ const Team = () => {
                     />
                   </div>
                   <div className="member-name">
-                    {" "}
-                    <h2 align="center">Joan Kabura</h2>{" "}
+                    <h3 style={{align:"center", color:"#074e8c"}}>Joan Kabura</h3>
                   </div>
                   <div className="member-info">
                     <p align="center">
@@ -126,11 +119,9 @@ const Team = () => {
                     </p>
                   </div>
                   <div className="member-mail">
-                    {" "}
                     <p align="center">
-                      {" "}
-                      <a href="mailto:@gmail.com">mailto:@gmail.com</a>{" "}
-                    </p>{" "}
+                        <a href="mailto:@gmail.com">mailto:@gmail.com</a>
+                    </p>
                   </div>
                   <div className="member-social">
                     <ul className="social-listing">
@@ -164,8 +155,7 @@ const Team = () => {
                     />
                   </div>
                   <div className="member-name">
-                    {" "}
-                    <h2 align="center">Austin Kaburia</h2>{" "}
+                    <h3 style={{align:"center", color:"#074e8c"}}>Austin Kaburia</h3>
                   </div>
                   <div className="member-info">
                     <p align="center">
@@ -174,11 +164,9 @@ const Team = () => {
                     </p>
                   </div>
                   <div className="member-mail">
-                    {" "}
                     <p align="center">
-                      {" "}
-                      <a href="mailto:@gmail.com">mailto:@gmail.com</a>{" "}
-                    </p>{" "}
+                        <a href="mailto:@gmail.com">mailto:@gmail.com</a>
+                    </p>
                   </div>
                   <div className="member-social">
                     <ul className="social-listing">
